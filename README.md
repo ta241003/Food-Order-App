@@ -1,2 +1,2 @@
-# Food-Order-App Moble
+# Food-Order-App Mobile
 JAVA, FIREBASE
