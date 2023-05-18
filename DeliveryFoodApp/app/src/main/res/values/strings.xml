@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Delivery Food App</string>
+    <string-array name="districts">
+        <item>Ngu Hanh Son</item>
+        <item>Hai Chau</item>
+        <item>Cam Le</item>
+        <item>Lien Chieu</item>
+        <item>Son Tra</item>
+        <item>Thanh Khe</item>
+        <item>Hoa Vang</item>
+    </string-array>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+</resources>

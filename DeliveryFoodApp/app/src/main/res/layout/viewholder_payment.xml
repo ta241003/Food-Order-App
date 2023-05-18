@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardElevation="8dp"
+    app:cardCornerRadius="8dp"
+    android:layout_margin="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Gmail:"
+                android:textColor="#D16D4E"
+                android:textSize="24sp"/>
+
+            <TextView
+                android:id="@+id/txtGmail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ngotheanh@gmail.com"
+                android:textColor="#090909"
+                android:layout_marginLeft="8dp"
+                android:textSize="18sp" />
+
+        </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:orientation="horizontal">
+
+     <TextView
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:text="Time Order:"
+         android:textColor="#D16D4E"
+         android:textSize="24sp"/>
+
+      <TextView
+          android:id="@+id/txtTimeOrder"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="24/10/2003"
+          android:textColor="#090909"
+          android:layout_marginLeft="8dp"
+          android:textSize="18sp" />
+
+    </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Address:"
+                android:textColor="#D16D4E"
+                android:textSize="24sp"/>
+
+            <TextView
+                android:id="@+id/txtAddressOrder"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nguyen Tao, Da Nang"
+                android:textColor="#090909"
+                android:layout_marginLeft="8dp"
+                android:layout_marginBottom="3dp"
+                android:textSize="18sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Total Items:"
+                android:textColor="#D16D4E"
+                android:textSize="24sp"/>
+
+            <TextView
+                android:id="@+id/txtTotalItemOrder"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1$"
+                android:textColor="#090909"
+                android:layout_marginLeft="8dp"
+                android:textSize="18sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Delivery Fee:"
+                android:textColor="#D16D4E"
+                android:textSize="24sp"/>
+
+            <TextView
+                android:id="@+id/txtDeliveryOrder"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2$"
+                android:textColor="#090909"
+                android:layout_marginLeft="8dp"
+                android:textSize="18sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tax Fee:"
+                android:textColor="#D16D4E"
+                android:textSize="24sp"/>
+
+            <TextView
+                android:id="@+id/txtTaxFee"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:text="1$"
+                android:textColor="#090909"
+                android:textSize="18sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Total Bill:"
+                android:textColor="#D16D4E"
+                android:textSize="24sp"/>
+
+            <TextView
+                android:id="@+id/txtTotalBill"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="10$"
+                android:textColor="#090909"
+                android:layout_marginLeft="8dp"
+                android:textSize="18sp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

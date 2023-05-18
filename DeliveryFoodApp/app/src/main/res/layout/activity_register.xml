@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context=".Activity.RegisterActivity">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        tools:layout_editor_absoluteX="58dp"
+        tools:layout_editor_absoluteY="0dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/bg_register">
+
+            <TextView
+                android:id="@+id/banner"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="36dp"
+                android:fontFamily="@font/abril_fatface"
+                android:paddingBottom="12dp"
+                android:text="ALOHA DELIVERY"
+                android:textColor="#60283B"
+                android:textSize="40dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <EditText
+                android:id="@+id/edt_FullName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="40dp"
+                android:layout_marginEnd="8dp"
+                android:drawableLeft="@drawable/ic_fullname"
+                android:drawablePadding="10dp"
+                android:ems="10"
+                android:hint="FullName"
+                android:inputType="text"
+                app:layout_constraintEnd_toEndOf="@+id/banner"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/banner"
+                app:layout_constraintTop_toBottomOf="@+id/banner" />
+
+            <EditText
+                android:id="@+id/edt_Phone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="8dp"
+                android:drawableLeft="@drawable/ic_age"
+                android:drawablePadding="10dp"
+                android:ems="10"
+                android:hint="Phone"
+                android:inputType="number"
+                app:layout_constraintEnd_toEndOf="@+id/edt_FullName"
+                app:layout_constraintStart_toStartOf="@+id/edt_FullName"
+                app:layout_constraintTop_toBottomOf="@+id/edt_FullName" />
+
+            <EditText
+                android:id="@+id/edt_Email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="8dp"
+                android:drawableLeft="@drawable/ic_email"
+                android:drawablePadding="10dp"
+                android:ems="10"
+                android:hint="Email"
+                android:inputType="textEmailAddress"
+                app:layout_constraintEnd_toEndOf="@+id/edt_Phone"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/edt_Phone"
+                app:layout_constraintTop_toBottomOf="@+id/edt_Phone" />
+
+            <EditText
+                android:id="@+id/edt_InputPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="8dp"
+                android:drawableLeft="@drawable/ic_password"
+                android:drawablePadding="10dp"
+                android:ems="10"
+                android:hint="Password"
+                android:inputType="textPassword"
+                app:layout_constraintEnd_toEndOf="@+id/edt_Email"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/edt_Email"
+                app:layout_constraintTop_toBottomOf="@+id/edt_Email" />
+
+            <TextView
+                android:id="@+id/txt_PageLogin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="50dp"
+                android:text="Already Have Account?"
+                android:textSize="16dp"
+                app:layout_constraintEnd_toEndOf="@+id/edt_InputPassword"
+                app:layout_constraintTop_toBottomOf="@+id/edt_InputPassword" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnRegister"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="60dp"
+                android:layout_marginEnd="50dp"
+                android:background="@drawable/button_bg"
+                android:text="Register"
+                android:textColor="#FAFAFA"
+                android:textSize="30dp"
+                app:layout_constraintEnd_toEndOf="@+id/txt_PageLogin"
+                app:layout_constraintHorizontal_bias="0.508"
+                app:layout_constraintStart_toStartOf="@+id/edt_InputPassword"
+                app:layout_constraintTop_toBottomOf="@+id/txt_PageLogin" />
+
+            <ProgressBar
+                android:id="@+id/progressBar"
+                style="?android:attr/progressBarStyle"
+                android:visibility="gone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.498"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.489" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

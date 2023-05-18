@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context=".Activity.LoginActivity">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        tools:layout_editor_absoluteX="58dp"
+        tools:layout_editor_absoluteY="0dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/bg_login">
+
+            <TextView
+                android:id="@+id/banner"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="36dp"
+                android:fontFamily="@font/abril_fatface"
+
+                android:text="ALOHA DELIVERY"
+                android:textColor="#60283B"
+                android:textSize="40dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <EditText
+                android:id="@+id/edt_InputEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="60dp"
+                android:layout_marginEnd="8dp"
+                android:background="@drawable/input_bg"
+                android:drawableLeft="@drawable/ic_email"
+                android:drawablePadding="14dp"
+                android:ems="10"
+                android:hint="Email"
+                android:inputType="textEmailAddress"
+                android:padding="14dp"
+                app:layout_constraintEnd_toEndOf="@+id/banner"
+                app:layout_constraintStart_toStartOf="@+id/banner"
+                app:layout_constraintTop_toBottomOf="@+id/banner" />
+
+            <EditText
+                android:id="@+id/edt_InputPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="32dp"
+                android:layout_marginEnd="8dp"
+                android:background="@drawable/input_bg"
+                android:drawableLeft="@drawable/ic_password"
+                android:drawablePadding="14dp"
+                android:ems="10"
+                android:hint="Password"
+                android:inputType="textPassword"
+                android:padding="14dp"
+                app:layout_constraintEnd_toEndOf="@+id/edt_InputEmail"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/edt_InputEmail"
+                app:layout_constraintTop_toBottomOf="@+id/edt_InputEmail" />
+
+            <TextView
+                android:id="@+id/txt_ForgotPassword"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="8dp"
+                android:text="Forgot Password?"
+                android:textSize="16dp"
+                app:layout_constraintEnd_toEndOf="@+id/edt_InputPassword"
+                app:layout_constraintTop_toBottomOf="@+id/edt_InputPassword" />
+
+            <TextView
+                android:id="@+id/txt_pageRegister"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="Create New Account?"
+                android:textColor="@color/teal_700"
+                android:textSize="16dp"
+                app:layout_constraintStart_toStartOf="@+id/edt_InputPassword"
+                app:layout_constraintTop_toBottomOf="@+id/edt_InputPassword" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnLogin"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="60dp"
+                android:background="@drawable/button_bg"
+                android:text="Login"
+                android:textColor="#FAFAFA"
+                android:textSize="30dp"
+                app:layout_constraintEnd_toEndOf="@+id/txt_ForgotPassword"
+                app:layout_constraintHorizontal_bias="0.508"
+                app:layout_constraintStart_toStartOf="@+id/edt_InputPassword"
+                app:layout_constraintTop_toBottomOf="@+id/txt_ForgotPassword" />
+
+            <ProgressBar
+                android:id="@+id/progressBarr"
+                style="?android:attr/progressBarStyle"
+                android:visibility="gone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.498"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.489" />
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:text="or sign in with"
+                android:textSize="22sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/btnLogin" />
+
+            <ImageView
+                android:id="@+id/btnGoogle"
+                android:layout_width="67dp"
+                android:layout_height="76dp"
+                android:layout_marginTop="30dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView"
+                app:srcCompat="@drawable/google_logo" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
